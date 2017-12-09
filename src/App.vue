@@ -43,20 +43,26 @@
       return {
         options: {
           keys: [{
-            name: '--选择--',
+            label: '--选择--',
             id: -1
           }, {
-            name: '姓名',
+            label: '姓名',
             id: 'name',
             type: 'String'
           }, {
-            name: '年龄',
+            label: '年龄',
             id: 'age',
+            type: 'Int'
+          },
+          {
+            label: '身高',
+            id: 'height',
             type: 'Int'
           }],
           defaultfieldvalue: {
-            name: ['小明', '小力', '小张'],
-            age: [12, 13, 14]
+            label: ['小明', '小力', '小张'],
+            age: [12, 13, 14],
+            height:[]
           }
         },
         isFirst: true,

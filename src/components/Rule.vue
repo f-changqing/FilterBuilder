@@ -3,7 +3,7 @@
     <div class="col-xs-3">
       <select class="form-control input-sm" v-model="key">
                             <option v-for="option in options.keys" :value="option.id" :key="option.id">
-                              {{option.name}}
+                              {{option.label}}
                             </option>
                           </select>
     </div>
@@ -49,7 +49,7 @@
           }
           for (const iterator of this.options.keys) {
             if (this.key == iterator.id) {
-              this.label = iterator.name;
+              this.label = iterator.label;
             }
           }
         }
@@ -63,7 +63,7 @@
         operator: ' = ',
         value: '',
         type: 'String',
-        defaultvalue: '',
+        defaultvalue: '未设置',
         fieldvalueslist: [],
         operators: [{
           name: '等于',
@@ -134,6 +134,8 @@
         this.fieldvalueslist = this.options.defaultfieldvalue[this.key];
         if (this.fieldvalueslist.length > 0) {
           this.defaultvalue = this.fieldvalueslist[0];
+        }else{
+          this.defaultvalue='未设置';
         }
       }
     }
