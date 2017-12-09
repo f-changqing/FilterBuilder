@@ -42,7 +42,7 @@
     data () {
       return {
         key: -99,
-        operator: -99,
+        operator: '=',
         value: ''
       }
     },
