@@ -1,18 +1,17 @@
-# filter-builder
+## FilterBuilder
+FilterBuilder is an UI component to create queries and filters. Based on vue 2.0 and bootstrap & AdminLTE.css
 
-> A Vue.js project
+Use the FilterBuilder to construct queries of arbitrary complexity.
 
-## Build Setup
+---
 
-``` bash
-# install dependencies
-npm install
+#### 更新的内容
 
-# serve with hot reload at localhost:8080
-npm run dev
+- 根据项目的设计更换了配色
 
-# build for production with minification
-npm run build
-```
+- 添加了条件参数设置，默认选择首位
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+- 添加生成SQL条件语句 带参和不带参两种显示状态
+
+
+>  使用详见 demo 分支
