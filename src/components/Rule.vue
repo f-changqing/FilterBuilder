@@ -23,7 +23,7 @@
           </option>
         </select>
     </div>
-    <button class="btn btn-xs btn-purple add-rule pull-right btn-param" @click="paramselect"> {{ispara?'可传参':'不可传参'}} </button>
+    <button class="btn btn-xs btn-purple add-rule pull-right btn-param" @click="paramselect" v-if="options.param"> {{ispara?'可传参':'不可传参'}} </button>
     <!-- <button class="btn btn-xs btn-purple-outline btn-radius btn-purple-round" @click.prevent="deleteSelf()">
                           <i class="fa fa-fw fa-close"></i>
                         </button> -->

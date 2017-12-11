@@ -42,6 +42,7 @@
     data() {
       return {
         options: {
+          param:true,
           keys: [{
             label: '--选择--',
             id: -1
