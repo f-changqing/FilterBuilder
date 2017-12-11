@@ -130,7 +130,8 @@
                 label: element.label,
                 value: element.value,
                 ispara: element.ispara,
-                defaultvalue: element.defaultvalue
+                defaultvalue: element.defaultvalue,
+                type:element.type
               })
             }
           }
